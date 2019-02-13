@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>요청하신 페이지를 찾을 수 없습니다 | CJ문화재단</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimal-ui">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="/assets/css/error.css">
+<link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+</head>
+<body>
+<div class="error">
+    <div class="error-cell">
+        <h1 class="logo">
+            <img src="/assets/img/a/ci-white.png" alt="CJ문화재단">
+            <span class="a11y">CJ문화재단</span>
+        </h1>
+
+        <div class="error-box">
+            <div class="pad">
+                <h2>요청하신 페이지를 <br>찾을 수 없습니다.</h2>
+                <p>페이지의 주소가 잘못 입력되었거나, <br class="for-large">주소가 변경 혹은 삭제되어 요청하신 페이지를 찾을 수 없습니다.</p>
+
+                <hr>
+
+                <p>
+                    입력하신 주소가 정확한지 다시 한번 확인해 주시기 바랍니다. <br class="for-large">관련 문의사항은 <a href="/customer/qna" class="link">고객센터 Q&amp;A</a> 또는 대표메일(<a href="mailto:cjazit@cjazit.org" class="link">cjazit@cjazit.org</a>)로 문의하시면 <br class="for-large">친절하게
+                    안내해 드리겠습니다. 감사합니다.
+                </p>
+
+                <div class="func">
+                    <a href="/" class="btn btn--bold"><span class="btn-text">홈으로</span></a>
+                    <a href="/" class="btn" id="x-back"><span class="btn-text">이전 페이지로</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="error-footer">
+            <div class="groups">
+                <h2 class="a11y">CJ그룹 계열사 바로가기</h2>
+                <select id="cjWebSite" class="companyGroup" onChange="window.open(this.value);">
+                        <option value="">CJ그룹 계열사 바로가기</option>
+                        <optgroup label="CJ그룹">
+                            <option value="http://www.cj.net/" title="새 창으로 보기">CJ주식회사</option>
+                        </optgroup>
+                        <optgroup label="식품 &amp; 식품서비스">
+                            <option value="http://www.cj.co.kr" title="새 창으로 보기">CJ제일제당(식품)</option>
+                            <option value="http://www.cjfreshway.com" title="새 창으로 보기">CJ프레시웨이</option>
+                            <option value="https://www.cjfoodville.co.kr/main.asp" title="새 창으로 보기">CJ푸드빌</option>
+                            <option value="http://www.md1.co.kr" title="새 창으로 보기">CJ엠디원</option>
+                        </optgroup>
+                        <optgroup label="생명공학">
+                            <option value="http://www.cj.co.kr/cj-kr/businesses/4/main" title="새 창으로 보기">CJ제일제당(바이오)</option>
+                        </optgroup>
+                        <optgroup label="신유통">
+                            <option value="http://display.cjmall.com" title="새 창으로 보기">CJ ENM(오쇼핑)</option>
+                            <option value="http://www.cjlogistics.com" title="새 창으로 보기">CJ대한통운</option>
+                            <option value="http://www.cjtelenix.com" title="새 창으로 보기">CJ텔레닉스</option>
+                            <option value="http://www.oliveyoung.co.kr/store/main/main.do" title="새 창으로 보기">CJ올리브네트웍스(올리브영)</option>
+                        </optgroup>
+                        <optgroup label="엔터테인먼트 &amp; 미디어">
+                            <option value="http://www.cjenm.com/" title="새 창으로 보기">CJ ENM(E&M)</option>
+                            <option value="http://www.cgv.co.kr" title="새 창으로 보기">CJ CGV</option>
+                            <option value="http://www.cjhello.com" title="새 창으로 보기">CJ Hello</option>
+                            <option value="http://www.cjpowercast.com" title="새 창으로 보기">CJ파워캐스트</option>
+                        </optgroup>
+                        <optgroup label="인프라">
+                            <option value="http://www.cjenc.co.kr" target="_blank" title="새 창으로 보기">CJ대한통운(건설)</option>
+                            <option value="http://www.cjolivenetworks.co.kr/itbusiness/" target="_blank" title="새 창으로 보기">CJ올리브네트웍스(IT사업)</option>
+                        </optgroup>
+                    </select>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © 2017 CJ Cultural Foundation. <br class="for-small">All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var btn_back = document.getElementById('x-back');
+
+    btn_back.onclick = (function() {
+        history.back();
+        return false;
+    });
+
+</script>
+</body>
+</html>
